@@ -1,5 +1,5 @@
 ---
-title: "R Notebook Home Task 01: Random process simulations and description"
+title: 'R Notebook Home Task 01: Random process simulations and description'
 output: html_notebook
 ---
 
@@ -46,5 +46,7 @@ plot_wn <- ggplot(df_white_noise, aes(x = Time, y = White_noise)) +
   geom_line() + 
   xlab("") + 
   theme_bw()
-p
+plot_wn
 ```
+
+Мы помним, что этот временной ряд создан нами по модели нормального белого шума со средним 5 и стандартным отклонением 2. При анализе реальных временных рядов мы не будем знать, по какой модели создан временной ряд. Поэтому временно забудем настоящую модель и попробуем восстановить ее параметры самостоятельно.
